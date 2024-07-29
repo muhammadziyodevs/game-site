@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            
+            <div class="header-menu">
+                <ul class="header-menu-item">
+                    <li><i class="fa-solid fa-house"></i></li>
+                    <li>My Work</li>
+                    <li>Comment</li>
+                    <li>Contact Me</li>
+                    <li>My Skill</li>
+                    <li><i class="fa-solid fa-language"></i></li>
+                </ul>   
+            </div>
+         
+        </div>
+
+        <div class="main">
+            <div class="gallery">
+                <img src="./images/sa-removebg-preview.png" class="top-left" alt="">
+                <img src="./images/sa-removebg-preview.png" class="top-right" alt="">
+                <img src="./images/sa-removebg-preview.png" class="bottom-left" alt="">
+                <img src="./images/sa-removebg-preview.png" class="bottom-right" alt="">
+             
+                <div class="images">
+                    <img src="./images/photo_2024-07-10_17-42-32.jpg" alt="netnur.com">
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <h2>My Games</h2>
+            <div class="main-card">
+                <div class="card">
+                    <img src="./images/tt-removebg-preview (1).png" alt="Card Image">
+                    <h2>Tik Tok Toe</h2>
+                    <button id="playButton">Play</button>
+                </div>
+                <div class="card">
+                    <img src="./images/dino-removebg-preview.png" style="width: 200px;" alt="Card Image">
+                    <h2>Dino</h2>
+                    <button id="playDino">Play</button>
+
+                </div>
+                <div class="card">
+                    <img src="./images/tetris-removebg-preview.png" alt="Card Image">
+                    <h2>Tetris</h2>
+                    <a href="./Tetris/index.html">
+                        <button>Play</button>
+
+                    </a>
+
+                </div>
+                <div class="card">
+                    <img src="./images/snake-removebg-preview.png" alt="Card Image">
+                    <h2>Snake</h2>
+                    <a href="./snake/index.html">
+                        <button>Play</button>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <h2>Our Card</h2>
+            <div class="main-card">
+                <div class="card">
+                    <img src="./images/sadwq-removebg-preview.png" alt="Card Image">
+                    <h2>Card Title</h2>
+                    <p>This is a description of the card. It provides additional details and information about the content of the card.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="card">
+                    <img src="./images/sadwq-removebg-preview.png" alt="Card Image">
+                    <h2>Card Title</h2>
+                    <p>This is a description of the card. It provides additional details and information about the content of the card.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="card">
+                    <img src="./images/sadwq-removebg-preview.png" alt="Card Image">
+                    <h2>Card Title</h2>
+                    <p>This is a description of the card. It provides additional details and information about the content of the card.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="card">
+                    <img src="./images/sadwq-removebg-preview.png" alt="Card Image">
+                    <h2>Card Title</h2>
+                    <p>This is a description of the card. It provides additional details and information about the content of the card.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="footer">
+            <h3>Sizga manzur bo`lganimizdan hursandmiz!!!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aliquid ullam ducimus ipsam possimus quia totam numquam repudiandae tenetur, at alias. Iusto asperiores debitis adipisci illo voluptatibus? Nobis, molestias magnam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolores impedit cumque error voluptatum atque molestiae, ex magni quae molestias, perspiciatis quo libero suscipit quaerat earum? Tempore enim facere quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quasi optio laudantium porro, ad repudiandae obcaecati dicta qui quidem alias minima, voluptatem, doloribus eligendi ex tempore nesciunt vero iure inventore.</p>
+            <div class="buttons">
+                <button class="footer-btn">2</button>
+                <button class="footer-btn">0</button>
+                <button class="footer-btn">2</button>
+                <button class="footer-btn">4</button>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="clsa">&times;</span>
+            <div class="game-board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <div class="game-info">
+                <h2 class="status"></h2>
+                <button class="restart btn">Restart Game</button>
+            </div>
+           
+        </div>
+    </div>
+    <div id="myDino" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="game-container">
+                <div class="mario"></div>
+                <div class="obstacle"></div>
+            </div>
+            <div class="game-over">Game Over</div>
+            <div class="instructions">Press Space to Jump</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
